@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="jeyflix.Logins.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:jeyflix"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LoginPage" Background="#FF131317">
+        <StackPanel HorizontalAlignment="Center" Margin="0,0
+                    ,0,0" Orientation="Vertical" VerticalAlignment="Center">
+            <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" Text="Server: Mishka" RequestedTheme="Dark" FontFamily="Calibri" FontSize="16"/>
+            <TextBox x:Name="lgn_user_tbox" Margin="0,20,0,0" TextWrapping="Wrap" Text="" Width="246" FontFamily="Calibri" FontSize="16" PlaceholderText="User" InputScope="Url" RequestedTheme="Dark"/>
+            <TextBox x:Name="lgn_password_tbox" Margin="0,20,0,0" TextWrapping="Wrap" Text="" Width="246" FontFamily="Calibri" FontSize="16" PlaceholderText="Password" InputScope="Url" RequestedTheme="Dark"/>
+            <Button x:Name="lgn_enter_btn" Margin="0,20,0,0" Content="Login" Width="246" Background="#FF5C30C3" FontFamily="Calibri" FontSize="16" RequestedTheme="Dark" RenderTransformOrigin="1,0" Click="lgn_enter_btn_Click"/>
+            <Button x:Name="lgn_changeserver_btn" Margin="0,90,0,0" Content="Change Server" Width="246" Background="#FFFF3E6A" FontFamily="Calibri" FontSize="16" RequestedTheme="Dark" RenderTransformOrigin="1,0" Click="lgn_changeserver_btn_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Page>
